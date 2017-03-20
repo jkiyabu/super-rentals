@@ -1,0 +1,13 @@
+<h1>Announcements</h1>
+
+
+<ul>
+  {{#each model.announcement as |announcement|}}
+    {{announcement-tile announcement=announcement}}
+  {{/each}}
+  <!-- {{#each model.rental as |rental|}}
+    {{rental-tile rental=rental destroyRental="destroyRental"}}
+  {{/each}} -->
+</ul>
+
+{{new-announcement saveAnnouncement2="saveAnnouncement3"}}
